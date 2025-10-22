@@ -12,7 +12,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-[#001F3F] via-[#004E64] to-[#00A896] text-white relative overflow-hidden">
+    <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-[#001F3F] via-[#003F5C] to-[#00A896] text-white relative overflow-hidden">
       {/* Subtle floating particles */}
       <div className="absolute inset-0 overflow-hidden">
         {[...Array(30)].map((_, i) => (
@@ -41,30 +41,30 @@ export default function App() {
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
-        className="text-center px-4 z-10"
+        className="text-center px-4 z-10 -mt-24 md:-mt-40"
       >
         <div className="flex justify-center mb-6">
           <Sparkles className="w-10 h-10 text-yellow-300 animate-pulse" />
         </div>
 
-        <h1 className="text-6xl md:text-7xl font-extrabold tracking-tight drop-shadow-lg">
+        <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight drop-shadow-lg mb-4">
           Welcome to <span className="text-yellow-300">StudyVerse</span>
         </h1>
-        <p className="mt-4 text-lg text-gray-200 max-w-xl mx-auto">
+        <p className="text-lg text-gray-200 max-w-xl mx-auto mb-8">
           Step into an immersive world built around your focus, creativity, and mood.
         </p>
 
         {!submitted ? (
           <form
             onSubmit={handleSubmit}
-            className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-3"
+            className="mt-6 flex flex-col sm:flex-row items-center justify-center gap-3"
           >
             <input
               type="text"
               placeholder="What verse would you like to be in?"
               value={verse}
               onChange={(e) => setVerse(e.target.value)}
-              className="px-5 py-3 w-72 sm:w-96 rounded-xl text-gray-900 text-lg focus:outline-none focus:ring-4 focus:ring-pink-400"
+              className="px-5 py-3 w-72 sm:w-96 rounded-xl text-gray-900 text-lg focus:outline-none focus:ring-4 focus:ring-teal-400"
             />
             <button
               type="submit"
@@ -93,7 +93,7 @@ export default function App() {
 
       {/* footer */}
       <footer className="absolute bottom-4 text-sm text-gray-300">
-        © 2025 StudyVerse • Made with ❤️ by Saket Sharma
+        © 2025 StudyVerse by Saket Sharma
       </footer>
     </div>
   );
