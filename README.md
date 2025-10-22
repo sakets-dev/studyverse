@@ -1,4 +1,6 @@
-# 🚀 StudyVerse — React + Vite + Tailwind CSS
+# StudyVerse — React + Vite + Tailwind CSS
+
+INCOMPLETE --> on a break because this is challenging lol, cant do it yet
 
 A modern, fast, and responsive **React + Vite** web application designed for smooth user experience and blazing-fast builds.  
 Built using **Vite**, **React**, and **Tailwind CSS**, this project serves as the foundation for scalable web apps with a clean and maintainable architecture.
